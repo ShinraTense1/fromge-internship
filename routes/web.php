@@ -1,5 +1,10 @@
 <?php
 
+use App\Http\Controllers\FirstController;
+use App\Http\Controllers\FourthController;
+use App\Http\Controllers\SecondController;
+use App\Http\Controllers\SixthController;
+use App\Http\Controllers\ThirdController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,20 +21,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('posts');
 });
-Route::get('/first', function () {
-    return view('first');
-});
-Route::get('/second', function () {
-    return view('second');
-});
-Route::get('/third', function () {
-    return view('third');
-});
 
-Route::get('/fourth', function () {
-    return view('fourth');
-});
-
-Route::get('/newSixth', function () {
-    return view('newSixth');
-});
+Route::get('/first',  [FirstController::class, 'index']);
+Route::get('/second', [SecondController::class, 'index']);
+Route::get('/third', [ThirdController::class, 'index']);
+Route::get('/fourth', [FourthController::class, 'index']);
+Route::get('/newSixth', [SixthController::class, 'index']);
