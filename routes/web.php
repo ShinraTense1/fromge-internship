@@ -25,6 +25,11 @@ Route::get('/second', function () {
 Route::get('/third', function () {
     return view('third');
 });
+
 Route::get('/fourth', function () {
     return view('fourth');
+});
+
+Route::get('/newSixth', function () {
+    return view('newSixth');
 });

@@ -14,3 +14,12 @@ article + article {
 
     margin-top: 3rem;
 }
+
+.container {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(205, 255, 193);
+    border: 5px solid rgb(253, 212, 212);
+    margin-top: 50px;
+    box-shadow: 5px 10px #888888;
+}
